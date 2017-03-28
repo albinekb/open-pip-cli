@@ -1,0 +1,9 @@
+{
+  "name": "open-pip-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "open-pip": "index.js"
+  },
+}
