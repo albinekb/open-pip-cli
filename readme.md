@@ -14,6 +14,10 @@ Known **not** working formats
   - mkv
   - avi
 
+## example
+
+![example](https://cloud.githubusercontent.com/assets/5027156/24427435/3529cfc4-140b-11e7-9799-de7326ddc088.gif)
+
 ## install
 
 ### yarn
