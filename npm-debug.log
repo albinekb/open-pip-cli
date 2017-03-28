@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.7.2/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/albinekb/Devel/Projects/open-pip-cli',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/albinekb/.npm/open-pip-cli/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/albinekb/.npm correctMkdir not in flight; initializing
+10 info lifecycle open-pip-cli@1.0.0~prepublish: open-pip-cli@1.0.0
+11 silly lifecycle open-pip-cli@1.0.0~prepublish: no script for prepublish, continuing
+12 info lifecycle open-pip-cli@1.0.0~prepare: open-pip-cli@1.0.0
+13 silly lifecycle open-pip-cli@1.0.0~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/albinekb/.npm/open-pip-cli/1.0.0/package.tgz',
+14 verbose tar pack   '/Users/albinekb/Devel/Projects/open-pip-cli' ]
+15 verbose tarball /Users/albinekb/.npm/open-pip-cli/1.0.0/package.tgz
+16 verbose folder /Users/albinekb/Devel/Projects/open-pip-cli
+17 verbose addLocalTarball adding from inside cache /Users/albinekb/.npm/open-pip-cli/1.0.0/package.tgz
+18 verbose correctMkdir /Users/albinekb/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd open-pip-cli@1.0.0
+20 verbose afterAdd /Users/albinekb/.npm/open-pip-cli/1.0.0/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/albinekb/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/albinekb/.npm/open-pip-cli/1.0.0/package/package.json written
+23 silly publish { name: 'open-pip-cli',
+23 silly publish   version: '1.0.0',
+23 silly publish   main: 'index.js',
+23 silly publish   license: 'MIT',
+23 silly publish   bin: { 'open-pip': 'index.js' },
+23 silly publish   dependencies: { 'open-pip': '^3.0.2', ora: '^1.2.0' },
+23 silly publish   readme: '# 🎥 open-pip\n\nCLI for [open-pip](https://github.com/albinekb/open-pip)\nThis will let you open a movie url/path in macOS native picture-in-picture player.\n\nBoth local files and urls are supported.\n\nKnown **working** formats\n  - mp4\n  - m4v\n  - mov\n\nKnown **not** working formats\n  - mkv\n  - avi\n\n## example\n\n![example](https://cloud.githubusercontent.com/assets/5027156/24427435/3529cfc4-140b-11e7-9799-de7326ddc088.gif)\n\n## install\n\n### yarn\n\n```sh\nyarn add global open-pip-cli\n```\n\n### npm\n```sh\nnpm install --global open-pip-cli\n```\n\n### Author\n\nAlbin Ekblom ([@albinekb](https://github.com/albinekb))\n',
+23 silly publish   readmeFilename: 'readme.md',
+23 silly publish   gitHead: 'a763699eb409fc8c849506423802873d8069893f',
+23 silly publish   description: 'CLI for [open-pip](https://github.com/albinekb/open-pip) This will let you open a movie url/path in macOS native picture-in-picture player.',
+23 silly publish   _id: 'open-pip-cli@1.0.0',
+23 silly publish   scripts: {},
+23 silly publish   _shasum: 'c642b85c4d62976fd52772d7c218a28b3e772430',
+23 silly publish   _from: '.' }
+24 info lifecycle open-pip-cli@1.0.0~prepublishOnly: open-pip-cli@1.0.0
+25 silly lifecycle open-pip-cli@1.0.0~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name open-pip-cli
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'open-pip-cli',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'open-pip-cli',
+30 silly mapToRegistry   name: 'open-pip-cli',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/open-pip-cli
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/albinekb/.npm/open-pip-cli/1.0.0/package.tgz
+34 verbose request uri https://registry.npmjs.org/open-pip-cli
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 11:09:45 PM
+37 verbose request using bearer token for auth
+38 verbose request id b17c288435db10f4
+39 http request PUT https://registry.npmjs.org/open-pip-cli
+40 http 403 https://registry.npmjs.org/open-pip-cli
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Tue, 28 Mar 2017 21:09:47 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-bma7022-BMA',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1490735386.141234,VS0,VE976',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /Users/albinekb/.npm/registry.npmjs.org/open-pip-cli on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : open-pip-cli
+44 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+44 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+44 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:194:7)
+44 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+45 verbose statusCode 403
+46 verbose pkgid open-pip-cli
+47 verbose cwd /Users/albinekb/Devel/Projects/open-pip-cli
+48 error Darwin 16.4.0
+49 error argv "/usr/local/Cellar/node/7.7.2/bin/node" "/usr/local/bin/npm" "publish"
+50 error node v7.7.2
+51 error npm  v4.1.2
+52 error code E403
+53 error "You cannot publish over the previously published version 1.0.0." : open-pip-cli
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
