@@ -6,4 +6,8 @@
   "bin": {
     "open-pip": "index.js"
   },
+  "dependencies": {
+    "open-pip": "^3.0.1",
+    "ora": "^1.2.0"
+  }
 }
