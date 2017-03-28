@@ -8,7 +8,7 @@ const input = process.argv[2]
 if (!input) throw new Error('No url supplied')
 
 open(input).then(() => {
-  spinner.stopAndPersist({ symbol: '🌟', text: 'Running' })
+  spinner.stopAndPersist({ symbol: '🌟', text: 'Running!' })
 })
 .catch((err) => {
   spinner.fail('Something went wrong')
