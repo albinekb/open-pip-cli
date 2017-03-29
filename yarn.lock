@@ -149,9 +149,9 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-open-pip@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/open-pip/-/open-pip-3.0.2.tgz#beb9eb85517ccb1d8e741bdca95e6b8fe9086196"
+open-pip@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/open-pip/-/open-pip-3.0.5.tgz#7d68a0420f4dda9e4a6f0a32e2b71afe4dfb8774"
   dependencies:
     args "^2.4.0"
     child-process-promise "^2.2.0"
