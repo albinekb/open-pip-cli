@@ -1,4 +1,4 @@
-# 📺 open-pip-cli [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# 📺 open-pip-cli [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) ![](https://img.shields.io/npm/dm/open-pip-cli.svg) ![](https://img.shields.io/npm/v/open-pip-cli.svg)
 
 
 CLI for [open-pip](https://github.com/albinekb/open-pip)
