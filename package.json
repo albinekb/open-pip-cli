@@ -1,8 +1,9 @@
 {
   "name": "open-pip-cli",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "main": "index.js",
-  "repository": "albinekb/open-pip",
+  "description": "📺 CLI for https://github.com/albinekb/open-pip - Open a movie url or path in macOS picture-in-picture",
+  "repository": "albinekb/open-pip-cli",
   "author": {
     "name": "Albin Ekblom",
     "email": "albinekblom@gmail.com",
