@@ -1,4 +1,5 @@
-# 📺 open-pip-cli
+# 📺 open-pip-cli [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 
 CLI for [open-pip](https://github.com/albinekb/open-pip)
 This will let you open a movie url/path in macOS native picture-in-picture player.
