@@ -23,7 +23,7 @@ Known **not** working formats
 ### yarn
 
 ```sh
-yarn add global open-pip-cli
+yarn global add open-pip-cli
 ```
 
 ### npm
