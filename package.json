@@ -2,6 +2,12 @@
   "name": "open-pip-cli",
   "version": "1.0.2",
   "main": "index.js",
+  "repository": "albinekb/open-pip",
+  "author": {
+    "name": "Albin Ekblom",
+    "email": "albinekblom@gmail.com",
+    "url": "https://github.com/albinekb"
+  },
   "license": "MIT",
   "bin": {
     "open-pip": "index.js"
