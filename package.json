@@ -13,6 +13,9 @@
   "bin": {
     "open-pip": "index.js"
   },
+  "scripts": {
+    "test": "standard"
+  },
   "dependencies": {
     "get-stdin": "^5.0.1",
     "open-pip": "^3.0.5",
