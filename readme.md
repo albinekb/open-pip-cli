@@ -16,7 +16,7 @@ Known **not** working formats
   - mkv
   - avi
 
-## example
+## Example
 
 ![example](https://cloud.githubusercontent.com/assets/5027156/24427435/3529cfc4-140b-11e7-9799-de7326ddc088.gif)
 
@@ -37,7 +37,7 @@ twitch-url BobRoss | open-pip
 
 Let us know if you have examples for more services.
 
-## install
+## Install
 
 ### yarn
 
@@ -50,8 +50,8 @@ yarn global add open-pip-cli
 npm install --global open-pip-cli
 ```
 
-## requirements
-As the native picture-in-picture player is only available in macOS Sierra (10.12) and above, this module will also only work with with those versions.
+## Requirements
+As the native picture-in-picture player is only available in macOS Sierra (10.12) and above, this module will also only work with those versions.
 
 ### Author
 
