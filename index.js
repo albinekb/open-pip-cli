@@ -6,11 +6,11 @@ const spinner = ora().start()
 
 getStdin()
 .then(stdin => {
-	if (stdin) return stdin.trim()
+  if (stdin) return stdin.trim()
 
-	const input = process.argv[2]
-	if (!input) throw new Error('No url supplied')
-	return input
+  const input = process.argv[2]
+  if (!input) throw new Error('No url supplied')
+  return input
 })
 .then(input => open(input))
 .then(() => {
