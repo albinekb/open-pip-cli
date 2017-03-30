@@ -50,8 +50,8 @@ yarn global add open-pip-cli
 npm install --global open-pip-cli
 ```
 
-### Requirements
-As the native picture-in-picture player is only available in macOS Sierra (10.12) and above, this module will also only with with those versions.
+## requirements
+As the native picture-in-picture player is only available in macOS Sierra (10.12) and above, this module will also only work with with those versions.
 
 ### Author
 
