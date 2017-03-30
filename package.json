@@ -1,6 +1,6 @@
 {
   "name": "open-pip-cli",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "index.js",
   "description": "📺 CLI for https://github.com/albinekb/open-pip - Open a movie url or path in macOS picture-in-picture",
   "repository": "albinekb/open-pip-cli",
@@ -12,6 +12,9 @@
   "license": "MIT",
   "bin": {
     "open-pip": "index.js"
+  },
+  "scripts": {
+    "test": "standard"
   },
   "dependencies": {
     "get-stdin": "^5.0.1",
