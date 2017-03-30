@@ -4,12 +4,17 @@ const ora = require('ora')
 const getStdin = require('get-stdin')
 const spinner = ora().start()
 
+const help = () => spinner.info('Usage: open-pip <path | youtube-url | twitch-url | other-video-url>')
+
 getStdin()
 .then(stdin => {
   if (stdin) return stdin.trim()
 
   const input = process.argv[2]
-  if (!input) throw new Error('No url supplied')
+  if (!input) {
+		help()
+		throw new Error('No url supplied')
+	}
   return input
 })
 .then(input => open(input))
