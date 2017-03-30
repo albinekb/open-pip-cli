@@ -12,9 +12,9 @@ getStdin()
 
   const input = process.argv[2]
   if (!input) {
-		help()
-		throw new Error('No url supplied')
-	}
+    help()
+    throw new Error('No url supplied')
+  }
   return input
 })
 .then(input => open(input))
