@@ -19,7 +19,8 @@
   "dependencies": {
     "get-stdin": "^5.0.1",
     "open-pip": "^3.0.5",
-    "ora": "^1.2.0"
+    "ora": "^1.2.0",
+    "ytdl-core": "^0.10.4"
   },
   "devDependencies": {
     "standard": "^9.0.2"
