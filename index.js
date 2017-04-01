@@ -23,13 +23,12 @@ getStdin()
 .then(input => {
   if (YOUTUBE_HOST.test(input)) {
     spinner.stopAndPersist({symbol: '🚀', text: 'Found youtube link'})
-    ytdl.getInfo(input, { debug: true }, (err, info) => {
+    ytdl.getInfo(input, {}, (err, info) => {
       if (err) {
         open(input)
-        return
+      } else {
+        open(info.formats[0].url)
       }
-
-      open(info.formats[0].url)
     })
   } else {
     open(input)
