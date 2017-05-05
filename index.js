@@ -9,8 +9,7 @@ const help = () => spinner.info('Usage: open-pip <path | youtube-url | twitch-ur
 
 const YOUTUBE_HOST = new RegExp('www.youtube')
 
-getStdin()
-.then(stdin => {
+const processStdin = stdin => {
   if (stdin) return stdin.trim()
 
   const input = process.argv[2]
@@ -19,25 +18,28 @@ getStdin()
     throw new Error('No url supplied')
   }
   return input
-})
-.then(input => {
+}
+
+const processInput = async input => {
+  let file
   if (YOUTUBE_HOST.test(input)) {
+    const result = await ytdl.getInfo(input, {})
+    file = result.formats[0].url
     spinner.stopAndPersist({symbol: '🚀', text: 'Found youtube link'})
-    ytdl.getInfo(input, {}, (err, info) => {
-      if (err) {
-        open(input)
-      } else {
-        open(info.formats[0].url)
-      }
-    })
   } else {
-    open(input)
+    file = input
   }
-})
-.then(() => {
-  spinner.stopAndPersist({ symbol: '🌟', text: 'Running!' })
-})
+  return file
+}
+
+getStdin()
+.then(processStdin)
+.then(async input => open(await processInput(input)))
+.then(() => spinner.stopAndPersist({ symbol: '🌟', text: 'Running!' }))
 .catch((err) => {
   spinner.fail('Something went wrong')
   if (err) console.log(err)
 })
+
+module.exports.processStdin = processStdin
+module.exports.processInput = processInput
