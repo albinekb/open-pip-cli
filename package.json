@@ -14,7 +14,7 @@
     "open-pip": "index.js"
   },
   "scripts": {
-    "test": "standard"
+    "test": "standard && ava"
   },
   "dependencies": {
     "get-stdin": "^5.0.1",
@@ -23,6 +23,7 @@
     "ytdl-core": "^0.10.4"
   },
   "devDependencies": {
+    "ava": "^0.19.1",
     "standard": "^9.0.2"
   }
 }
