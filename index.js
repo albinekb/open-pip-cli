@@ -7,7 +7,10 @@ const spinner = ora().start()
 
 const help = () => spinner.info('Usage: open-pip <path | youtube-url | twitch-url | other-video-url>')
 
-const YOUTUBE_HOST = new RegExp('www.youtube')
+const youtubeUrls = [
+  new RegExp('www.youtube'),
+  new RegExp('youtu.be')
+]
 
 const processStdin = stdin => {
   if (stdin) return stdin.trim()
@@ -21,13 +24,14 @@ const processStdin = stdin => {
 }
 
 const processInput = async input => {
-  let file
-  if (YOUTUBE_HOST.test(input)) {
-    const result = await ytdl.getInfo(input, {})
-    file = result.formats[0].url
-    spinner.stopAndPersist({symbol: '🚀', text: 'Found youtube link'})
-  } else {
-    file = input
+  let file = input
+
+  for (const url of youtubeUrls) {
+    if (url.test(input)) {
+      const result = await ytdl.getInfo(input, {})
+      file = result.formats[0].url
+      spinner.stopAndPersist({symbol: '🚀', text: 'Found youtube link'})
+    }
   }
   return file
 }
