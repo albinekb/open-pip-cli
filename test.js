@@ -15,8 +15,5 @@ test('Process youtube video on input', async t => {
 
 test('Wrong video throws error', async t => {
   t.plan(1)
-  await pip.processInput('https://www.youtube.com/wrongvideo').catch(err => {
-    err = null
-    t.pass()
-  })
+  pip.processInput('https://www.youtube.com/wrongvideo').catch(() => t.pass())
 })
