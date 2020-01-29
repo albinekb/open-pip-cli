@@ -17,13 +17,13 @@
     "test": "standard && ava"
   },
   "dependencies": {
-    "get-stdin": "^5.0.1",
+    "get-stdin": "^7.0.0",
     "open-pip": "^3.0.5",
-    "ora": "^1.2.0",
-    "ytdl-core": "^0.10.4"
+    "ora": "^4.0.3",
+    "ytdl-core": "^1.0.7"
   },
   "devDependencies": {
-    "ava": "^0.19.1",
-    "standard": "^9.0.2"
+    "ava": "0.19.1",
+    "standard": "^14.3.1"
   }
 }

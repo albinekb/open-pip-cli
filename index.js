@@ -30,20 +30,20 @@ const processInput = async input => {
     if (url.test(input)) {
       const result = await ytdl.getInfo(input, {})
       file = result.formats[0].url
-      spinner.stopAndPersist({symbol: '🚀', text: 'Found youtube link'})
+      spinner.stopAndPersist({ symbol: '🚀', text: 'Found youtube link' })
     }
   }
   return file
 }
 
 getStdin()
-.then(processStdin)
-.then(async input => open(await processInput(input)))
-.then(() => spinner.stopAndPersist({ symbol: '🌟', text: 'Running!' }))
-.catch((err) => {
-  spinner.fail('Something went wrong')
-  if (err) console.log(err)
-})
+  .then(processStdin)
+  .then(async input => open(await processInput(input)))
+  .then(() => spinner.stopAndPersist({ symbol: '🌟', text: 'Running!' }))
+  .catch((err) => {
+    spinner.fail('Something went wrong')
+    if (err) console.log(err)
+  })
 
 module.exports.processStdin = processStdin
 module.exports.processInput = processInput
