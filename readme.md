@@ -24,7 +24,7 @@ You can also pipe any video URL to `open-pip`. For example, using the [ytdl](htt
 
 ```sh
 yarn global add ytdl
-ytdl --print-url --filter-container=mp4 _HSylqgVYQI | open-pip
+ytdl _HSylqgVYQI --print-url | open-pip
 ```
 
 Using the [twitch-url-cli](https://www.npmjs.com/package/twitch-url-cli) module, you can stream a Twitch channel (you need a Twitch client ID though)
